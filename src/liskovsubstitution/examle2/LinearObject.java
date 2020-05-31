@@ -1,0 +1,36 @@
+package liskovsubstitution.examle2;
+
+import java.awt.*;
+
+public abstract class LinearObject {
+    private Point p1;
+    private Point p2;
+
+    public LinearObject(Point p1, Point p2) {
+        this.p1 = p1;
+        this.p2 = p2;
+    }
+
+    public Point getP1() {
+        return p1;
+    }
+
+    public Point getP2() {
+        return p2;
+    }
+
+    public double getSlope() {
+        /*code*/
+        return 0;
+    }
+
+    public double getYIntercept() {
+        /*code*/
+        return 0;
+    }
+
+    public  boolean IsOn(Point p) {
+        /*code*/
+        return true;
+    }
+}

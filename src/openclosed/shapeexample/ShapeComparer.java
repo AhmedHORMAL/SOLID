@@ -18,7 +18,7 @@ public class ShapeComparer implements Comparator {
         priorities.put(Square.class, 2);
     }
 
-    private int priorityFor(Object  object) {
+    private int priorityFor(Object object) {
         if (priorities.contains(object))
             return (int) priorities.get(object);
         else
@@ -29,6 +29,6 @@ public class ShapeComparer implements Comparator {
     public int compare(Object o1, Object o2) {
         int priority1 = priorityFor(o1.getClass());
         int priority2 = priorityFor(o2.getClass());
-        return Math.max(priority1, priority2);
+        return priority1 - priority2;
     }
 }

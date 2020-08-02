@@ -1,6 +1,5 @@
 package openclosed.shapeexample;
 
-public interface Shape
-{
+public interface Shape {
     void draw();
 }
